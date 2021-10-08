@@ -1,0 +1,223 @@
+:root{
+  font-family:"Montserrat", serif;}
+
+body{
+  background-image:url("https://i.imgur.com/kfFhV7c.png");
+}
+
+#nav-bar{
+  position:fixed;
+  width:100%;
+  top:0px;
+  left:0px;
+  background-color: rgb(235, 52, 128);
+  padding:13px;
+  font-family:"Playfair Display", serif;
+  font-size: 18px;
+  z-index:98;
+}
+
+.nav-link{ 
+  margin: 0px 40px 10px 40px;}
+
+.nav-link:link {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.nav-link:visited {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  color: #F8B8E4;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+.header-img {
+  position:fixed;
+  left: 91%;
+  top:0%;
+  max-width: 9%;
+  min-width:7%;
+  height: auto;
+  z-index: 99;
+}
+
+h1{
+  position:relative;
+  left:40vw;
+  top: 25px;
+  font-size:40px;
+  color:rgb(235, 52, 128);
+}
+
+.offers:link {
+  color: rgb(235, 52, 128);
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+.offers:visited {
+  color: purple;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.offers:hover {
+  color: purple;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+.donut-ignore{
+  font-size: 20px;
+  position:absolute;
+  top:75px;
+  left: 39vw;
+}
+
+h2{
+  color:rgb(235, 52, 128);
+  font-size: 25px;
+}
+.gallery-heading{
+  position:relative;
+  top: 15px;
+}
+.videointro{
+  font-size: 18px;
+}
+
+iframe{
+    border-width: 0px;
+}
+
+.donut-gallery{
+  display:flex;
+  flex-direction:row;
+  justify-content:space-around;
+  align-items:center;
+  flex-wrap:wrap;
+}
+
+#donut1, #donut2, #donut3, #donut4, #donut5, #donut6{
+  max-width:40vw;
+  clip-path:circle(45%)
+}
+
+#donut3{
+  max-height:300px;
+}
+
+#donut2{
+  max-height:465px;
+}
+
+@media (min-width: 400px){
+      #donut1, #donut2, #donut3, #donut4, #donut5, #donut6{
+        max-width:400px;
+  }
+
+.flavours{
+    font-size:18px;
+  } 
+.largertext{
+    font-size: 18px;
+  }
+  
+.flavourlist{
+    font-size: 18px;
+    position:relative;
+    padding: 0px 0px 20px 0px;
+    
+  }
+  
+.orderonline{
+    position: relative;
+    top:10px;
+  }
+  
+ .instoreheader{position:relative;
+  top: 10px;}
+<body>
+  <header id="header">
+    <nav id="nav-bar">
+      <a href="#donut-gallery" class="nav-link">Donut Gallery</a>
+      <a href="#order-online" class="nav-link">Order Online</a>
+      <a href="#order-instore" class="nav-link">Order In Store</a>
+    </nav>
+    <img src="https://i.imgur.com/NK8Zbmn.png" alt="The store's logo; a black and white drawing of a donut" class="header-img">
+  </header>
+  <main>
+    <h1><em> Divine Donuts </em></h1>
+    <p class="donut-ignore"> Donut Ignore Our Fabulous <a target="_blank" href="https://www.donutdigest.com/blog/" class="offers"> Offers! </a> </p>
+    <article>
+      <h2 class="gallery-heading"> Donut Gallery </h2>
+      <p class="videointro"> This is how our divine donuts are made...</p>
+      <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/DePRyZE5sn4" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <br>
+      <div class="donut-gallery">
+        <img id="donut1" src="https://i.imgur.com/yueQzkr.jpg" alt="A dozen donuts with sprinkles" class="donutimage1">
+        <img id="donut2" src="https://i.imgur.com/QfhD5o4.jpg" alt="A tower of colourful donuts" class="donutimage2">
+        <img id="donut3" src="https://i.imgur.com/oXPlX3S.jpg" alt="A donut with galaxy mirror glaze" class="donutimage3">
+        <img id="donut4" src="https://i.imgur.com/guK5rGP.jpg" alt="Halloween themed dounuts" class="donutimage4">
+        <img id="donut5" src="https://i.imgur.com/ER3hBG4.jpg" alt="An oversized pink sprinkles donut" class="donutimage5">
+        <img id="donut6" src="https://i.imgur.com/HOzPDAg.jpg" alt="A donut with cookies and cream filling" class="donutimage6">
+      </div>
+    </article>
+    <section id="buyers">
+      <div class="flavours">
+        <p> <strong> Decide on next month's special flavour now:</strong> </p>
+        <form action="https://www.freecodecamp.com/email-submit">
+          <fieldset>
+            <legend> Choose the next flavour of the month</legend>
+            <label for="Banana-and-peanut-butter"> Banana and Peanut butter</label>
+            <input id="Banana-and-peanut-butter" value="Banana" type="radio" name="donut-type">
+            <button accesskey="b"> or press b </button>
+            <label for="Marshmallow-and-salted-caramel">Marshmallow-and-salted-caramel</label>
+            <input id="Marshmallow-and-salted-caramel" value="Marshmallow" type="radio" name="donut-type">
+            <button accesskey="m"> or press m </button>
+            <label for="Blueberry-and-apple">Blueberry-and-apple</label>
+            <input id="Blueberry-and-apple" value="blueberry" type="radio" name="donut-type">
+            <button accesskey="a"> or press a </button>
+            <button type="submit">Submit</button>
+          </fieldset>
+        </form>
+        <br>
+        <p class="largertext"> Our past flavours of the month were...</p>
+        <ul>
+          <li class="flavourlist"> April: Rainbow Surprise </li>
+          <li class="flavourlist"> March: Bubblegum and popping candy </li>
+          <li class="flavourlist"> February: Biscoff and Oreos </li>
+        </ul>
+      </div>
+
+      <div id="order-online">
+        <h2 class="orderonline"> Order bespoke creations online </h2>
+        <p class="largertext"> To make large or bespoke orders, please fill out the form below and one of our donut devotees will be in touch before the end of the day... </p>
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+          <input type="text" placeholder="Name" required>
+          <input type="number" placeholder="Phone number" required>
+          <input id="email" name="email" type="email" placeholder="Email" required>
+
+          <input id="submit" type="submit" value="submit">
+        </form>
+      </div>
+      <br>
+      <div id="order-instore">
+        <h2 class="instoreheader"> Order in-Store </h2>
+        <p class="largertext"> To order in store, simply pop to our Antartica branch.
+
+          Opening times are 10AM-6PM 7 days a week. </p>
+
+        <img src="data:image/jpeg;base64,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" alt="A map showing the location of our antartica branch">
+      </div>
+    </section>
+  </main>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
